@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- HTML -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <script type="module" src="../src/main.js"></script>
+
+    <title>CuteMessage</title>
+  </head>
+  <body>
+    <div class="modal-wrapper active">
+      <div class="modal">
+        <div class="modal-top">
+          <div>
+            <h2>Cute<span>Message</span></h2>
+          </div>
+          <button class="close-modal" value="">X</button>
+        </div>
+
+        <h2 class="h2-subtitle">Olá humano, seja bem vindo! :)</h2>
+        <div class="picture">
+          <img
+            class="image-modal"
+            src=""
+            alt=""
+            onload="resizeImg(this, 240, 240)"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
+      <header>
+        <h1>Cute<span>Message</span></h1>
+      </header>
+
+      <main>
+        <h2>Sinta-se Abraçado por mim :)</h2>
+
+        <img class="gif-main" src="" alt="" />
+      </main>
+
+      <footer>
+        <p>Copyright &copy 2021 GUILHERME RIBEIRO</p>
+      </footer>
+    </div>
+
+    <script src="../src/main.js"></script>
+  </body>
+</html>

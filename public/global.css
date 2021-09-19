@@ -1,0 +1,9 @@
+html {
+  --black: #0d114f;
+  --white: #fafafa;
+  --blue: #3485ff;
+
+  font-size: 10px;
+
+  font-family: 'Roboto', sans-serif;
+}
