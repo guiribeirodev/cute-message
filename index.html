@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FONTS -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,39 +20,26 @@
     <link rel="stylesheet" href="./public/index.css" />
 
     <!-- SCRIPT -->
+    <script type="module" src="./src/main.js"></script>
 
     <title>CuteMessage</title>
   </head>
-  <body>
-    <div class="modal-wrapper active">
-      <div class="modal">
-        <div class="modal-top">
-          <div>
-            <h2>Cute<span>Message</span></h2>
-          </div>
-          <button class="close-modal" value="">X</button>
-        </div>
 
-        <h2 class="h2-subtitle">Olá humano, seja bem vindo! :)</h2>
-        <div class="picture">
-          <img
-            class="image-modal"
-            src=""
-            alt=""
-            onload="resizeImg(this, 240, 240)"
-          />
-        </div>
-      </div>
-    </div>
+  <body>
     <div class="main-container">
       <header>
         <h1>Cute<span>Message</span></h1>
       </header>
 
       <main>
-        <h2>Sinta-se Abraçado por mim :)</h2>
+        <blockquote cite="https://cutemessage-api.herokuapp.com/server">
+          <p class="phrase">Sinta-se Abraçado por mim :)</p>
+          <p class="author"></p>
+        </blockquote>
 
-        <img class="gif-main" src="" alt="" />
+        <img class="gif-main" src="" alt="Gif de gato fofinho" />
+
+        <p class="cute-phrase">Sinta-se Abraçado por mim humano :)</p>
       </main>
 
       <footer>
@@ -61,6 +47,22 @@
       </footer>
     </div>
 
-    <script src="./main.js"></script>
+    <!-- MODAL -->
+    <div class="modal-wrapper active">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>Cute<span>Message</span></h2>
+          <button class="close-modal">X</button>
+        </div>
+
+        <h2 class="h2-subtitle">Olá humano, seja bem vindo! :)</h2>
+        <picture>
+          <img class="image-modal" src="" alt="Imagem gato fofinho" />
+        </picture>
+        <div class="button">
+          <button class="close-modal">Fechar</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

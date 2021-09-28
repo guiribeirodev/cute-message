@@ -6,6 +6,7 @@
 .modal-wrapper {
   display: flex;
   position: fixed;
+
   top: 0;
   left: 0;
 
@@ -20,37 +21,34 @@
 
 .modal-wrapper .modal {
   margin: auto;
-  padding: 1rem;
 
-  width: 60vw;
-  height: 75vh;
+  width: 80vw;
+  height: 65vh;
 
   background-color: var(--white);
   border-radius: 0.8rem;
 }
 
-.modal-wrapper .modal-top {
+.modal-header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
   margin: 1rem;
 
-  height: 5%;
+  height: 10%;
+}
+
+.modal-header h2 {
+  font-size: 2rem;
 
   color: var(--blue);
 }
 
-.modal-wrapper .modal-top h2 {
+.modal-header button {
+  padding: 0;
+
   font-size: 2rem;
-}
-
-.modal-wrapper .modal span {
-  color: #000;
-}
-
-.modal-wrapper .modal-top button {
-  width: 2rem;
-  height: 2rem;
 
   background-color: transparent;
   color: red;
@@ -58,48 +56,94 @@
   border: none;
 }
 
-.modal-wrapper .modal .h2-subtitle {
+.modal-header h2 span {
+  color: #000;
+}
+
+.h2-subtitle {
   text-align: center;
 
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 
   font-size: 1.6rem;
+
   color: var(--black);
 }
 
-.modal-wrapper .modal .picture {
+.modal picture {
   display: flex;
   justify-content: center;
+
+  height: 40%;
 }
 
-@media screen and (min-width: 320px) {
-  .modal-wrapper .modal {
-    width: 75vw;
-  }
+.button {
+  text-align: center;
 
-  .modal-wrapper .modal .h2-subtitle {
-    margin-bottom: 5rem;
+  margin-top: 4rem;
+}
+
+.button button {
+  padding: 0.5rem;
+
+  width: 50%;
+
+  font-size: 1.4rem;
+
+  background-color: red;
+  color: white;
+
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+
+/* Telefones em paisagem e abaixo */
+@media screen and (max-width: 479px) {
+}
+
+/* Telefones em paisagem a tablet em retrato */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  html {
+    font-size: 20px;
+  }
+  .modal-wrapper .modal {
+    height: 70vh;
+  }
+  .modal picture {
+    height: 50%;
+  }
+  .button {
+    margin-top: 3rem;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .modal-wrapper .modal {
-    width: 75vw;
+/* tablet landscape */
+@media screen and (min-width: 1024px) and (max-width: 1600px) and (orientation: landscape) {
+  html {
+    font-size: 22px;
   }
+  .modal picture {
+    height: 45%;
+  }
+}
 
-  .modal-wrapper .modal .picture img {
+/* //desktop */
+@media screen and (min-width: 1020px) {
+  html {
+    font-size: 10px;
+  }
+  .modal-wrapper .modal {
     width: 50vw;
-    height: 50vh;
   }
 }
 
-@media screen and (min-width: 900px) {
-  .modal-wrapper .modal {
-    width: 60vw;
-    height: 75vh;
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 20px;
   }
-  .modal-wrapper .modal .h2-subtitle {
-    margin-bottom: 2rem;
+
+  .modal-wrapper .modal {
+    width: 50vw;
   }
 }

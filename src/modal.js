@@ -1,8 +1,9 @@
-export default function Modal() {
+export function Modal() {
   const modalWrapper = document.querySelector('.modal-wrapper');
-  const closeModal = document.querySelector('.close-modal');
+  const closeModal = document.querySelectorAll('.close-modal');
 
-  closeModal.addEventListener('click', close);
+  closeModal[0].addEventListener('click', close);
+  closeModal[1].addEventListener('click', close);
 
   function close() {
     modalWrapper.classList.remove('active');

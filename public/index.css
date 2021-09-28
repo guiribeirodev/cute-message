@@ -1,56 +1,81 @@
-.main-container {
-  display: flex;
-  flex-direction: column;
-
-  height: 100vh;
-}
-
+/* HEADER */
 header {
-  height: 10%;
-  padding: 1rem;
+  display: flex;
+  padding-left: 1rem;
+  align-items: center;
+
+  height: 10vh;
+
+  background-color: var(--blue);
 }
 
 header h1 {
   font-size: 2.5rem;
 
-  color: var(--blue);
+  color: #fff;
 }
 
 header h1 span {
-  color: black;
+  color: #000;
 }
 
+/* MAIN */
 main {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  box-sizing: border-box;
+  flex-flow: column;
+  align-items: center;
 
-  height: 90%;
-  width: 100vw;
+  height: 85vh;
+
+  background-color: var(--white);
 }
 
-main h2 {
-  text-align: center;
+main blockquote {
+  text-align: justify;
+  padding: 2rem;
 
-  font-size: 1.8rem;
+  height: 20%;
+
+  font-size: 1.6rem;
+
   color: var(--black);
 }
 
-main img {
-  margin-top: 20rem;
-  margin: auto;
-  width: 60vw;
-  height: 30rem;
+main blockquote .author {
+  text-align: end;
+
+  font-size: 1.4rem;
+
+  color: #000;
 }
 
-footer {
-  background: var(--blue);
-  height: 7%;
+main .gif-main {
+  margin-top: 1rem;
 
-  text-align: center;
+  height: 50%;
+  max-width: 90%;
+}
+
+main .cute-phrase {
+  margin-top: 1rem;
+  padding: 2rem;
+
+  font-size: 1.6rem;
+  color: var(--black);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 5vh;
+
+  background-color: var(--blue);
 }
 
 footer p {
-  padding-top: 1rem;
-  color: white;
+  color: #fff;
 }
