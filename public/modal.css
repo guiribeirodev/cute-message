@@ -108,7 +108,7 @@
     font-size: 20px;
   }
   .modal-wrapper .modal {
-    height: 70vh;
+    height: 60vh;
   }
   .modal picture {
     height: 50%;
@@ -135,6 +135,7 @@
   }
   .modal-wrapper .modal {
     width: 50vw;
+    height: 70vh;
   }
 }
 
