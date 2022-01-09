@@ -5,6 +5,13 @@ export function Modal() {
   closeModal[0].addEventListener('click', close);
   closeModal[1].addEventListener('click', close);
 
+  document.addEventListener('keydown', event => {
+    const keyName = event.key;
+    if (keyName == 'Escape') {
+      close();
+    }
+  });
+
   function close() {
     modalWrapper.classList.remove('active');
   }
